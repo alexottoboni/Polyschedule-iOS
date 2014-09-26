@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Course.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[Course sharedInstance] saveData];
+    [Course sharedInstance].subject = @"CPE";
+    [[Course sharedInstance] saveData];
+    [[Course sharedInstance] loadData];
     return YES;
 }
 
