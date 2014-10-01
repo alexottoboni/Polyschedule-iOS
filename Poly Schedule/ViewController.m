@@ -17,17 +17,23 @@
 
 - (void)displayCourse {
     // Subject Label
-    UILabel *subjectLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 30, 200, 20)];
+    UILabel *subjectLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 30, 200, 20)];
     [subjectLabel setBackgroundColor:[UIColor clearColor]];
     [subjectLabel setText:[@"Subject Name: " stringByAppendingString:[Course sharedInstance].subject]];
     [[self view] addSubview:subjectLabel];
     
     // Course Number Label
-    UILabel *courseNumberLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 50, 250, 20)];
+    UILabel *courseNumberLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 50, 250, 20)];
     [courseNumberLabel setBackgroundColor:[UIColor clearColor]];
     [courseNumberLabel setText:[@"Course Number: " stringByAppendingString:[Course sharedInstance].courseNumber]];
     [[self view] addSubview:courseNumberLabel];
-
+    
+    // Course Number Label
+    UILabel *buildingNameLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 70, 250, 20)];
+    [buildingNameLabel setBackgroundColor:[UIColor clearColor]];
+    [buildingNameLabel setText:[@"Building Name: " stringByAppendingString:[Course sharedInstance].buildingName]];
+    [[self view] addSubview:buildingNameLabel];
+    
 }
 
 
@@ -42,5 +48,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

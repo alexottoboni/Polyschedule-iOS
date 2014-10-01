@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA76D45F19D7384B00B82708 /* Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = FA76D45E19D7384B00B82708 /* Configure.m */; };
 		FA7FB0DE19D5E20200F13643 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7FB0DD19D5E20200F13643 /* main.m */; };
 		FA7FB0E119D5E20200F13643 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7FB0E019D5E20200F13643 /* AppDelegate.m */; };
 		FA7FB0E419D5E20200F13643 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7FB0E319D5E20200F13643 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA76D45D19D7384B00B82708 /* Configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Configure.h; path = ../Configure.h; sourceTree = "<group>"; };
+		FA76D45E19D7384B00B82708 /* Configure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Configure.m; path = ../Configure.m; sourceTree = "<group>"; };
 		FA7FB0D819D5E20200F13643 /* Poly Schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poly Schedule.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7FB0DC19D5E20200F13643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7FB0DD19D5E20200F13643 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				FA7FB0E019D5E20200F13643 /* AppDelegate.m */,
 				FA7FB0E219D5E20200F13643 /* ViewController.h */,
 				FA7FB0E319D5E20200F13643 /* ViewController.m */,
+				FA76D45D19D7384B00B82708 /* Configure.h */,
+				FA76D45E19D7384B00B82708 /* Configure.m */,
 				FA7FB0E519D5E20200F13643 /* Main.storyboard */,
 				FA7FB0E819D5E20200F13643 /* Images.xcassets */,
 				FA7FB0EA19D5E20200F13643 /* LaunchScreen.xib */,
@@ -173,6 +178,7 @@
 				TargetAttributes = {
 					FA7FB0D719D5E20200F13643 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 8YGGQ4B9M7;
 					};
 					FA7FB0F019D5E20200F13643 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -227,6 +233,7 @@
 				FA7FB10219D5E2BC00F13643 /* Course.m in Sources */,
 				FA7FB0E419D5E20200F13643 /* ViewController.m in Sources */,
 				FA7FB0E119D5E20200F13643 /* AppDelegate.m in Sources */,
+				FA76D45F19D7384B00B82708 /* Configure.m in Sources */,
 				FA7FB0DE19D5E20200F13643 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,9 +356,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Poly Schedule/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -359,9 +369,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Poly Schedule/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -418,6 +431,7 @@
 				FA7FB0FD19D5E20200F13643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA7FB0FE19D5E20200F13643 /* Build configuration list for PBXNativeTarget "Poly ScheduleTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +440,7 @@
 				FA7FB10019D5E20200F13643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
